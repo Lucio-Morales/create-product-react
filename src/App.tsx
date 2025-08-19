@@ -1,17 +1,18 @@
 import { Outlet } from 'react-router-dom';
-import Footer from './components/Footer';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
-function PublicLayout() {
+const PublicLayout = () => {
   return (
-    <div className="bg-gray-300 flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 container mx-auto p-6 border-l border-r border-gray-500">
+      <main className="flex-1">
         <Outlet />
       </main>
+
       <Footer />
     </div>
   );
-}
+};
 
 export default PublicLayout;

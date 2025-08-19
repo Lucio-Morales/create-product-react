@@ -1,9 +1,11 @@
 import NavBar from './NavBar';
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
-    <header className="bg-gray-300 text-gray-800 border-b border-gray-500">
+    <header className="shadow-md sticky top-0 z-50 backdrop-blur-md">
       <NavBar />
     </header>
   );
-}
+};
+
+export default Header;

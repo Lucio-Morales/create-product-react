@@ -1,1 +1,88 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@layer base {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+  /* Base global */
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #dddee6; /* Gris azulado oscuro */
+    color: rgb(45, 45, 45);            /* Texto claro, suave */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  /* h1, h2, h3, p {
+    color: #1b1b1b; 
+  } */
+
+  h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+  }
+
+  a {
+    /* color: #3d2877;  */
+    text-decoration: none;
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
+  }
+
+  button {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    /* background-color: #2C2F3C;  */
+    /* color: #E0E0E0; */
+    /* border: 1px solid #5A5F73; */
+    /* transition: background-color 0.2s; */
+  }
+
+  /* button:hover {
+    background-color: #3A3D4C;
+  } */
+
+  input,
+  textarea,
+  select {
+    /* background-color: #2C2F3C; */
+    /* color: #E0E0E0; */
+    /* border: 1px solid #5A5F73; */
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    /* transition: border-color 0.2s, box-shadow 0.2s; */
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    /* border-color: #A89CC8;  */
+    box-shadow: 0 0 0 2px rgba(168, 156, 200, 0.3);
+  }
+}
