@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
+import { UserPlus, LogIn } from "lucide-react";
 
 const NavBar: React.FC = () => {
   return (
     <nav className="container mx-auto flex items-center justify-between py-4 px-6">
-      {/* IZQUIERDA: Logo + nombre + navegación */}
+
       <div className="flex items-center space-x-6">
         <div className="flex items-center space-x-2">
           <img src="/favicon.svg" alt="Logo" className="w-8 h-8" />
@@ -11,24 +12,22 @@ const NavBar: React.FC = () => {
             Services.find
           </NavLink>
         </div>
-        <NavLink to="#" className="px-3 py-2 rounded hover:underline">
-          Cómo funciona
-        </NavLink>
-        <NavLink to="#" className=" px-3 py-2 rounded hover:underline">
-          Servicios
-        </NavLink>
       </div>
 
-      {/* DERECHA: botones */}
       <div className="flex items-center space-x-4">
         <NavLink
           to="/register"
-          className="bg-zinc-800 text-zinc-300 hover:text-zinc-50 hover:bg-zinc-700 px-4 py-2 rounded transition"
-        >
-          Registrarse
+          className="inline-flex items-center gap-2 text-zinc-700 bg-gray-100 px-4 py-2 rounded transition transform hover:scale-105 hover:bg-indigo-50 hover:text-indigo-700">
+          <UserPlus className="w-4 h-4" />
+          <span>Crear cuenta</span>
         </NavLink>
-        <NavLink to="/login" className="border border-zinc-700 px-4 py-2 rounded transition">
-          Iniciar sesión
+
+        <NavLink
+          to="/login"
+          className="inline-flex items-center gap-2 text-zinc-700 bg-gray-100 px-4 py-2 rounded transition transform hover:scale-105 hover:bg-indigo-50 hover:text-indigo-700"
+        >
+          <LogIn className="w-4 h-4" />
+          <span>Iniciar sesión</span>
         </NavLink>
       </div>
       {/* Mobile menu button */}

@@ -1,29 +1,33 @@
+import HeroImg from "../assets/hero-image.svg";
+
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between py-16 px-6 lg:px-20">
-      {/* Columna izquierda: texto */}
-      <div className="flex-1 mb-10 lg:mb-0 lg:pr-10">
-        <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-          {/* Headline */}
-          Ofrece tus servicios, deja que las personas te encuentren y crece tu negocio online
+    <section className="flex flex-col lg:flex-row items-center justify-between py-12 px-6 lg:px-20">
+      {/* Texto */}
+      <div className="flex-1 mb-12 lg:mb-0 lg:pr-12">
+        <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6">
+          Haz crecer tu <span className="text-indigo-600">marca personal</span> ofreciendo tus servicios online
         </h1>
-        <p className="text-lg mb-8">
-          {/* Subtítulo */}
-          Crea tu perfil, muestra tus habilidades y conecta con clientes interesados.
+        <p className="text-lg text-gray-600 mb-8 max-w-lg">
+          Conecta con clientes, muestra tus habilidades y lleva tu negocio al siguiente nivel con nuestra plataforma.
         </p>
         <div className="flex flex-wrap gap-4">
-          {/* CTA buttons */}
-          <button className="px-6 py-3 rounded-lg font-semibold border">Crear mi perfil</button>
-          <button className="px-6 py-3 rounded-lg font-semibold border">Explorar servicios</button>
+          <button className="px-8 py-3 rounded-xl font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition cursor-pointer">
+            Crear mi perfil
+          </button>
+          <button className="px-8 py-3 rounded-xl font-semibold border border-gray-500 text-gray-700 hover:bg-gray-100 transition cursor-pointer">
+            Explorar servicios
+          </button>
         </div>
       </div>
 
-      {/* Columna derecha: imagen o ilustración */}
-      <div className="flex-1 flex justify-center items-center">
-        <div className="bg-zinc-400 w-full h-64 lg:h-96 border rounded-lg flex justify-center items-center">
-          {/* Placeholder para imagen/illustración */}
-          <span>Imagen o ilustración aquí</span>
-        </div>
+      {/* Imagen */}
+      <div className="flex-1 flex justify-center">
+        <img
+          src={HeroImg}
+          alt="Ilustración de servicios online"
+          className="w-80 lg:w-[28rem] h-auto drop-shadow-lg"
+        />
       </div>
     </section>
   );
