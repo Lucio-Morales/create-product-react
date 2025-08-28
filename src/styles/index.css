@@ -1,7 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
   /* Base global */
   * {
     @apply antialiased;
@@ -9,13 +9,13 @@
 
   html {
     scroll-behavior: smooth;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
 
   body {
-    background-color: #dddee6; /* Gris azulado oscuro */
-    color: rgb(45, 45, 45);            /* Texto claro, suave */
+    background-color: #d0d2e5; /* Gris azulado oscuro */
+    color: rgb(45, 45, 45); /* Texto claro, suave */
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
   }
