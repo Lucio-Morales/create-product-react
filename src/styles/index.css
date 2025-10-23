@@ -2,7 +2,6 @@
 
 @layer base {
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-  /* Base global */
   * {
     @apply antialiased;
   }
@@ -14,7 +13,7 @@
   }
 
   body {
-    background-color: #d0d2e5; /* Gris azulado oscuro */
+    background-color: #e7e8f0; /* Gris azulado oscuro */
     color: rgb(45, 45, 45); /* Texto claro, suave */
     font-family: 'Inter', sans-serif;
     line-height: 1.6;

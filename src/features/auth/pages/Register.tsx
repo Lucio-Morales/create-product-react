@@ -38,7 +38,7 @@ const Register = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-[#e5e5ff] shadow-xl rounded-2xl p-8 border border-[#d6d6fe] mt-12 mb-12">
+    <div className="w-full max-w-md mx-auto bg-[#efefff] shadow-xl rounded-2xl p-8 border border-[#d6d6fe] mt-12 mb-12">
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold text-gray-900">Crear cuenta ✨</h1>
         <p className="text-gray-500 mt-2 text-sm">Completá los datos para registrarte en la plataforma</p>

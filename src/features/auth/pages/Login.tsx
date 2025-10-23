@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-[#e5e5ff] w-full max-w-md mx-auto shadow-xl rounded-2xl p-8 border-[#d6d6fe]  mt-12 mb-12">
+    <div className="bg-[#efefff] w-full max-w-md mx-auto shadow-xl rounded-2xl p-8 border border-[#d6d6fe]  mt-12 mb-12">
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold ">Bienvenido 👋</h1>
         <p className=" mt-2 text-sm">Ingresá con tus credenciales para continuar</p>
