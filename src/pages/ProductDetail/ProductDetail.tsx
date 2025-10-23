@@ -1,12 +1,13 @@
+import { Truck } from 'lucide-react';
 import ImagePlaceholder from '../../components/common/ImagePlaceholder';
 
 const ProductDetail = () => {
   return (
-    <div className="bg-white max-w-6xl p-10">
+    <div className="bg-white max-w-5xl p-6">
       <h2 className="font-light">Product detail</h2>
       <div className="w-full mx-auto">
         {/* CONTENT */}
-        <div className="flex gap-6">
+        <div className="flex gap-16">
           {/* images section */}
           <div className="w-1/2">
             <div className="w-full flex flex-col gap-2">
@@ -23,7 +24,7 @@ const ProductDetail = () => {
             </div>
           </div>
           {/* info section */}
-          <div className="w-1/2 ">
+          <div className="w-1/2">
             <div className="flex flex-col h-full justify-between">
               <img src="/reebok.svg" alt="Logo reebok" className="w-10 h-10" />
               <h3>Shoes Reebok Zig Kinetica 3</h3>
@@ -35,7 +36,7 @@ const ProductDetail = () => {
                 <img src="/star.svg" alt="Star rating" className="w-4 h-4" />
                 <p className="ml-2 text-sm text-gray-500">46 reviews</p>
               </div>
-              <span className="text-4xl font-semibold mt-2">$199.00</span>
+              <span className="text-5xl font-semibold mt-4">$199.00</span>
               <div className="mt-4">
                 <span className="font-semibold">Color:</span>
                 <span>White</span>
@@ -47,21 +48,34 @@ const ProductDetail = () => {
               </div>
 
               <div className="mt-4">
-                <h4 className="font-semibold mb-1">Select size</h4>
+                <h4 className="font-semibold mb-1">Size</h4>
                 <div className="flex gap-2">
-                  <span className="border p-2 text-sm cursor-pointer hover:bg-gray-100">38</span>
-                  <span className="border p-2 text-sm cursor-pointer hover:bg-gray-100">39</span>
-                  <span className="border p-2 text-sm cursor-pointer hover:bg-gray-100">40</span>
-                  <span className="border p-2 text-sm cursor-pointer hover:bg-gray-100">41</span>
-                  <span className="border p-2 text-sm cursor-pointer hover:bg-gray-100">42</span>
+                  <span className="border border-gray-400 p-2 text-sm cursor-pointer hover:bg-gray-100 rounded-md">
+                    38
+                  </span>
+                  <span className="border border-gray-400 p-2 text-sm cursor-pointer hover:bg-gray-100 rounded-md">
+                    39
+                  </span>
+                  <span className="border border-gray-400 p-2 text-sm cursor-pointer hover:bg-gray-100 rounded-md">
+                    40
+                  </span>
+                  <span className="border border-gray-400 p-2 text-sm cursor-pointer hover:bg-gray-100 rounded-md">
+                    41
+                  </span>
+                  <span className="border border-gray-400 p-2 text-sm cursor-pointer hover:bg-gray-100 rounded-md">
+                    42
+                  </span>
                 </div>
               </div>
               <div className="mt-6">
-                <button className="w-full bg-black text-white py-3 font-semibold rounded-md hover:bg-gray-800 transition">
+                <button className="w-full bg-black text-white py-3 font-semibold rounded-lg hover:bg-zinc-900 transition cursor-pointer">
                   Add to Cart
                 </button>
 
-                <p className="text-center text-sm text-green-600 mt-2">Free delivery on orders over $50</p>
+                <p className="flex items-center font-bold gap-2 text-sm mt-2">
+                  <Truck className=" w-5 h-5" />
+                  Free delivery on orders over $50.00
+                </p>
               </div>
             </div>
           </div>
