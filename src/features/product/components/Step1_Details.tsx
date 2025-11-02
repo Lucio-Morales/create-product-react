@@ -6,7 +6,7 @@ const Step1 = ({ data, onChange }) => {
   };
 
   return (
-    <div className="bg-white p-6 shadow-xl rounded-xl border border-gray-100 space-y-6">
+    <div className="bg-white p-6 shadow-xl rounded-xl border border-gray-100 space-y-6 h-full">
       {/* Nombre del producto */}
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
@@ -89,7 +89,7 @@ const Step1 = ({ data, onChange }) => {
       {/* Botón Siguiente */}
       <div className="pt-4 border-t border-gray-100">
         <button
-          className="w-full bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200 shadow-md"
+          className="w-full bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200 shadow-md cursor-pointer"
           onClick={() => alert('Simulando ir al Paso 2...')}
         >
           Siguiente
