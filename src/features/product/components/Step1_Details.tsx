@@ -23,6 +23,22 @@ const Step1 = ({ data, onChange }) => {
         />
       </div>
 
+      {/* Categoria del producto */}
+      <div>
+        <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
+          Categorias del Producto <span className="text-red-500">*</span>
+        </label>
+        <input
+          type="text"
+          name="category"
+          id="category"
+          value={data.category}
+          onChange={handleChange}
+          className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+          placeholder="Ej: Remera, Calzado,..."
+        />
+      </div>
+
       {/* Descripcion del producto  */}
       <div>
         <label htmlFor="description" className="block text-sm font-semibold text-gray-700">

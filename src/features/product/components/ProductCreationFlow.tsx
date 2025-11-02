@@ -16,16 +16,18 @@ const ProductCreationFlow = () => {
     images: [],
   });
   return (
-    <div className="flex flex-col h-full lg:flex-row p-4 gap-8 max-w-7xl mx-auto border border-zinc-800">
+    <div className="flex flex-col h-full lg:flex-row p-4 gap-8 max-w-7xl mx-auto">
       {/* ⬅️ COLUMNA DEL FORMULARIO (AHORA MÁS ESTRECHA) */}
       <div className="lg:w-1/3 order-1 lg:order-1">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">📋 Paso 1: Detalles del Producto</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-4 border-b border-gray-400 pb-2">📋 Detalles del Producto</h3>
         {/* Renderizado condicional del paso */}
         {currentStep === 1 && <Step1 data={productData} onChange={setProductData} />}
       </div>
       {/* ➡️ COLUMNA DE LA VISTA PREVIA (AHORA MÁS ANCHA) */}
-      <div className="lg:w-2/3 sticky top-4 order-2 lg:order-2">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">✨ Vista Previa de la Card</h3>
+      <div className="lg:w-2/3 sticky  top-4 order-2 lg:order-2">
+        <h3 className="text-xl font-bold text-gray-800 mb-4 border-b border-gray-400 pb-2">
+          ✨ Vista Previa de la Card
+        </h3>
         {/* Componente de Previsualización */}
         <ProductCardPreview data={productData} />
       </div>
