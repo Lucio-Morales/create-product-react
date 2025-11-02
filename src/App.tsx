@@ -1,9 +1,9 @@
-import ProductDetail from './pages/ProductDetail/ProductDetail';
+import ProductCreationFlow from './features/product/components/ProductCreationFlow';
 
 const PublicLayout = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white">
-      <ProductDetail />
+    <div className="min-h-screen bg-[#f5f8de]">
+      <ProductCreationFlow />
     </div>
   );
 };
