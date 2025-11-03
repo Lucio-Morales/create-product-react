@@ -2,7 +2,7 @@ import ProductCreationFlow from './features/product/components/ProductCreationFl
 
 const PublicLayout = () => {
   return (
-    <div className="min-h-screen bg-[#f5f8de] ">
+    <div className="min-h-screen bg-[#dfdfdf] ">
       <ProductCreationFlow />
     </div>
   );

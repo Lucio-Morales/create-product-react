@@ -14,11 +14,11 @@ const ProductCreationFlow = () => {
     images: [],
   });
   return (
-    <>
-      <div className="bg-red-500">
+    <div className="pt-6 max-w-6xl mx-auto space-y-2">
+      {/* <div className="border-b bg-gray-300">
         <span>aqui debe ir la barra de progreso</span>
-      </div>
-      <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto p-2">
+      </div> */}
+      <div className="flex flex-col lg:flex-row gap-8 max-w-6xl ">
         {/* PRODUCT FORM */}
         <div className="lg:w-1/3 order-1 lg:order-1 h-full">
           <h3 className="text-lg font-medium text-gray-800 mb-4 border-b border-gray-400 pb-2">
@@ -34,7 +34,7 @@ const ProductCreationFlow = () => {
           <ProductCardPreview data={productData} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
