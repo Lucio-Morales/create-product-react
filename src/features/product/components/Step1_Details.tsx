@@ -6,7 +6,7 @@ const Step1 = ({ data, onChange }) => {
   };
 
   return (
-    <div className="bg-white p-6 shadow-xl rounded-xl border border-gray-100 space-y-6 h-full">
+    <div className="bg-white p-6 shadow-xl rounded-xl border border-gray-100 space-y-4 h-full">
       {/* Nombre del producto */}
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
@@ -18,7 +18,7 @@ const Step1 = ({ data, onChange }) => {
           id="name"
           value={data.name}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+          className="mt-1 text-sm block w-full rounded-lg border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
           placeholder="Ej: Remera oversize nike"
         />
       </div>
@@ -34,7 +34,7 @@ const Step1 = ({ data, onChange }) => {
           id="category"
           value={data.category}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+          className="mt-1 text-sm block w-full rounded-lg border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
           placeholder="Ej: Remera, Calzado,..."
         />
       </div>
@@ -50,7 +50,7 @@ const Step1 = ({ data, onChange }) => {
           rows={4}
           value={data.description}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+          className="mt-1 text-sm block w-full rounded-lg border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
           placeholder="Detalles que el compador debe saber..."
         />
       </div>
@@ -67,7 +67,7 @@ const Step1 = ({ data, onChange }) => {
             id="price"
             value={data.price}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+            className="mt-1 text-lg block w-full rounded-lg border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
           />
         </div>
 
@@ -81,7 +81,7 @@ const Step1 = ({ data, onChange }) => {
             id="stock"
             value={data.stock}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-lg border border-gray-300 shadow-sm p-3 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
+            className="mt-1 text-lg block w-full rounded-lg border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring-blue-500 transition duration-150"
           />
         </div>
       </div>
